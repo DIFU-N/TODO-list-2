@@ -1,0 +1,91 @@
+#posted {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 300px;
+    border: 0px solid black;
+}
+#addNew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(171, 206, 161, 0.35);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+h3{
+    margin-left: 10px;
+}
+#head{
+    text-align: center  ;
+    /* grid-row: 100%; */
+    /* grid-column: 100%; */
+}
+.task-popup {
+    transition: 200ms ease-in-out;
+    border: 0px solid green;
+    position: absolute;
+    top:   10%;
+    bottom: 0;
+    right: 0;
+    left: 40%;
+    visibility: hidden;
+    opacity: 0;
+}
+.form {
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    row-gap: 13px;
+    padding: 1em 2em;
+    border: 2px solid black;
+    border-radius: 10px;
+    row-gap: 13px;
+    background: rgba(red, green, blue, 0.7);
+    transition: 200ms ease-in-out;
+}
+footer{
+    display: grid;
+    border: 0px solid black;
+}
+#close {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+.task-popup:target{
+    visibility: visible;
+    opacity: 1;
+}
+textarea {
+    resize: none;
+}
+#empty-posts {
+    color: red;
+}
+#posted22 {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+}
+#postB{
+    margin-top: 0px;
+    width: 50;
+    height: 40px;
+    font-size: 14px;
+}
+table {
+    width: 800px;
+    border: 1px solid black;
+}
+th {
+    width: 200px;
+    border: 1px solid black;
+}
+td {
+    /* width: 250px; */
+    border: 1px solid black;
+}
+#h1 {
+    width: 400px;
+}

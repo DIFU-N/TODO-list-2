@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo</title>
+</head>
+<body>
+    <button onclick="addNew()" id="addnew">Add New</button>
+    <div class="task-popup" id="myTask" >
+        <form id="form" class="form">
+            <div id="close"><button onclick="closeM()" >Close</button></div>
+            <span><b>Add New Task SHii</b></span>
+            <span>Task Shii</span>
+            <input type="text">
+            <span>Description</span>
+            <textarea name="" id="type" cols="30" rows="10" ></textarea>
+            <footer>
+                    <button type="submit" onclick="formValidate()"id="postB">Post</button>
+                    <div id="empty-posts"></div> 
+            </footer>
+            
+        </form>  
+                  
+    </div>
+    <table id="posr">
+        <div id="posted">
+            <tr>
+                <th id="h1">Tasks</th>
+                <th id="h2">Priority</th>
+                <th id="h3">Actions</th>
+            </tr>
+            <tbody>
+                <div id="posted22">
+                    <tr>
+                        <td>
+                            <h3 id="indivtask">
+                                mm
+                            </h3>
+                        </td>
+                        <td>    
+                            <input type="button" onClick="edit(this)" id="editB"value="edit">
+                        <input type="button" onClick="del(this)" id="deleteB"value="delete">
+                        </td>
+                        <td>
+                            <input type="button" onClick="done(this)" id="doneB"value="done">
+                        </td>
+                    </tr>
+                    <!-- 30114 -->
+                </div>                    
+            </tbody>
+        </div>
+    </table>
+
+
+    
+    <script src="script.js"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- <form id="form">
+        <label>right here</label>
+        <textarea name="" id="input" cols="30" rows="10"></textarea>
+        <div id="empty-post"></div>
+        <button type="submit">finni</button>
+    </form>
+
+    <div id="posts">
+        <h1>posts</h1>
+        <button id="delete">delete</button>
+    </div>
+
+    <script src="script.js"></script> -->
+</body>
+</html>
