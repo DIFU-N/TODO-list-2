@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background-color: #fd0000; genesis */
     background-color: rgba(171, 206, 161, 0.35);
     padding: 5px 10px;
     border-radius: 5px;
@@ -64,7 +65,7 @@ textarea {
 #empty-posts {
     color: red;
 }
-#posted22 {
+.posted22 {
     display: grid;
     grid-template-columns: 60% 20% 20%;
 }
