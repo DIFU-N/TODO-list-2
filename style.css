@@ -90,3 +90,7 @@ td {
 #h1 {
     width: 400px;
 }
+.completed {
+    text-decoration: line-through;
+    color: green;
+}

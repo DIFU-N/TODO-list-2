@@ -28,7 +28,8 @@ let data = [{}];
 
 acceptData = () => {
     data.push({
-        taskValue: text.value    
+        taskValue: text.value,
+        // active: stat.value,    
     });
     console.log(data);
 
@@ -40,6 +41,7 @@ acceptData = () => {
 
 createPosts = () => {
     data.map((x,y) => {
+        // stat = "yes";        
         return posts.innerHTML += 
         `
         <tr id=${y}>
@@ -50,10 +52,10 @@ createPosts = () => {
             </td>
             <td>    
                 <input type="button" onClick="edit(this)" class="editB"value="edit">
-            <input type="button" onClick="del(this)" class="deleteB"value="delete">
+                <input type="button" onClick="del(this)" class="deleteB"value="delete">
             </td>
             <td>
-                <input type="button" onClick="done()" class="doneB"value="done">
+                <input type="button" onClick="done(this)" class="doneB"value="done">
             </td>
         </tr>
         `; 
@@ -79,17 +81,11 @@ edit = (e) => {
 
 done = (e) => {
     // let indiviTask = document.querySelectorAll(".indivtask");
+    // stat = "no";
     let selectedCompletedTask = e.parentElement.previousElementSibling.previousElementSibling.firstElementChild.firstElementChild;
     console.log(selectedCompletedTask);
     selectedCompletedTask.classList.toggle("completed");
-    // console.log(indiviTask);
-    // let taskString = JSON.stringify(data.task);
-    // console.log(taskString);
-    // indiviTask.innerHTML = 
-    // `
-    // <span style="text-decoration: line-through;">${taskString}</span>
-    // `;
-    // indiviTask.style.textDecoration = "line-through";
+    localStorage.setItem("data", JSON.stringify(data));
 }
 addNew = () => {
     taskpop.style.visibility = "visible";
@@ -113,6 +109,11 @@ priority = () => {
 }
 
 (() => {
+    // if (stat = "no") {
+        
+    // } else {
+        
+    // }
     data = JSON.parse(localStorage.getItem("data")) || [{}]
     console.log(data);
     createPosts();
